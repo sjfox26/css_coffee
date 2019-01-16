@@ -1,0 +1,52 @@
+.about {
+  background-color: #f3cf7a;
+  grid-column: center-start / center-end;
+  grid-row: 2 / span 1; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content min-content 40vw min-content;
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] 1fr [full-end]; }
+
+.customer__content {
+  background-color: #eee;
+  grid-column: full-start / col-end 4; }
+
+.customer__picture {
+  background-color: #f3cf7a;
+  grid-column: col-start 5 / full-end; }
+
+.footer {
+  background-color: #101d2c;
+  grid-column: full-start / full-end; }
+
+.gallery {
+  background-color: #be6a15;
+  grid-column: full-start / full-end; }
+
+.header {
+  background-color: lightblue;
+  grid-column: full-start / full-end;
+  grid-row: 1 / span 1; }
+
+.sidebar {
+  background-color: #774e26;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1; }

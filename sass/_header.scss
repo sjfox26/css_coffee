@@ -1,0 +1,25 @@
+.header {
+  grid-column: full-start / full-end;
+  grid-row: 1 / span 1;
+  background-image: url(../img/mike-kenneally-46284-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__name {
+    font-size: 7.5rem;
+    transform: translateY(-25%);
+  }
+
+  &__location {
+    font-size: 3rem;
+    transform: translateY(-100%);
+  }
+}

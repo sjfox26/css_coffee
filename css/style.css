@@ -1,0 +1,89 @@
+.about {
+  background-color: #f3cf7a;
+  grid-column: center-start / center-end;
+  grid-row: 2 / span 1; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Cormorant", "Nunito", sans-serif;
+  color: #6D5D4B;
+  font-weight: 400;
+  line-height: 1.6; }
+
+.container {
+  display: grid;
+  grid-template-rows: 80vh min-content min-content 40vw min-content;
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.customer__content {
+  background-color: #eee;
+  grid-column: full-start / col-end 4; }
+
+.customer__picture {
+  background-color: #f3cf7a;
+  grid-column: col-start 5 / full-end; }
+
+.footer {
+  background-color: #0B2D35;
+  grid-column: full-start / full-end; }
+
+.gallery {
+  background-color: #be6a15;
+  grid-column: full-start / full-end; }
+
+.header {
+  grid-column: full-start / full-end;
+  grid-row: 1 / span 1;
+  background-image: url(../img/mike-kenneally-46284-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .header__name {
+    font-size: 7.5rem;
+    transform: translateY(-25%); }
+  .header__location {
+    font-size: 3rem;
+    transform: translateY(-100%); }
+
+.sidebar {
+  background-color: #774e26;
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.nav-btn {
+  position: fixed;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+  height: 2px;
+  width: 4.5rem;
+  margin-top: 4rem; }
+  .nav-btn::before, .nav-btn::after {
+    background-color: #fff;
+    height: 2px;
+    width: 4.5rem;
+    content: "";
+    display: block; }
+  .nav-btn::before {
+    transform: translateY(-1.5rem); }
+  .nav-btn::after {
+    transform: translateY(1.3rem); }
