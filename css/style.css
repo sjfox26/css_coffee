@@ -62,7 +62,34 @@ body {
   background-color: #5b2e35;
   grid-column: full-start / full-end;
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.8rem;
+  padding: 8rem; }
+
+.nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  align-items: center; }
+  .nav__link:link, .nav__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s; }
+  .nav__link:hover, .nav__link:active {
+    transform: translateY(-3px); }
+
+.copyright {
+  font-size: 1.4rem;
+  color: #fff;
+  margin-top: 8rem;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 70%; }
 
 .gallery {
   background-color: #be6a15;
