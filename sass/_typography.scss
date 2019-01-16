@@ -1,1 +1,11 @@
+.paragraph {
+  font-size: 1.7rem;
 
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+.secondary-heading {
+  font-size: 3.3rem;
+}
