@@ -50,19 +50,39 @@ body {
   grid-template-rows: 80vh min-content min-content 40vw min-content;
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+.customer__picture {
+  background-image: url(../img/jon-moore-399489-unsplash.jpg);
+  background-size: cover;
+  grid-column: full-start / col-end 4;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center; }
+
+.customer__picture img {
+  width: 100%;
+  grid-row: 2 / 6;
+  grid-column: 2 / 6;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1); }
+
 .customer__content {
   background-color: #eee;
-  grid-column: full-start / col-end 4; }
+  grid-column: col-start 5 / full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
 
-.customer__picture {
-  background-color: #f3cf7a;
-  grid-column: col-start 5 / full-end; }
+.customer__content--text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 4rem; }
 
 .footer {
   background-color: #5b2e35;
   grid-column: full-start / full-end;
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   padding: 8rem; }
 
 .nav {
@@ -83,7 +103,7 @@ body {
     transform: translateY(-3px); }
 
 .copyright {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   color: #fff;
   margin-top: 8rem;
   margin-right: auto;
@@ -149,6 +169,32 @@ body {
 
 .secondary-heading {
   font-size: 3.3rem; }
+
+.heading-2 {
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1; }
+  .heading-2--light {
+    color: #979797; }
+  .heading-2--dark {
+    color: #4A4A4A; }
+
+.heading-3 {
+  font-size: 1.6rem;
+  color: #767676;
+  text-transform: uppercase; }
+
+.mb-sm {
+  margin-bottom: 2rem; }
+
+.mb-md {
+  margin-bottom: 3rem; }
+
+.mb-lg {
+  margin-bottom: 4rem; }
+
+.mb-hg {
+  margin-bottom: 8rem; }
 
 .u-center-text {
   text-align: center !important; }
