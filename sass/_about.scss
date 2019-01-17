@@ -7,7 +7,7 @@
     width: 70%;
     margin: 0 auto;
     padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-bottom: 12rem; //same with composition below
   }
 
   &__composition {
@@ -16,7 +16,7 @@
     //background-color: #f195f3;
     width: 85%;
     padding-top: 9rem;
-    padding-bottom: 9rem;
+    padding-bottom: 12rem;
 
     display: grid;
     grid-template-rows: repeat(12, 1fr);
