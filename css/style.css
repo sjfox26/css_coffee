@@ -8,10 +8,14 @@
   @media only screen and (max-width: 1100px) {
     .about__text {
       grid-column: center-start / -1;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      width: 88%; } }
   @media only screen and (max-width: 900px) {
     .about__text {
       width: 95%; } }
+  @media only screen and (max-width: 700px) {
+    .about__text {
+      width: 100%; } }
 
 .about__composition {
   grid-column: col-start 5 / full-end;
