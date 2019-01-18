@@ -131,6 +131,12 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   align-items: center; }
+  @media only screen and (max-width: 800px) {
+    .nav {
+      grid-template-rows: repeat(auto-fit, min-content);
+      grid-template-columns: 100vw;
+      grid-row-gap: 1.5rem;
+      justify-content: center; } }
   .nav__link:link, .nav__link:visited {
     font-size: 1.4rem;
     color: #fff;
