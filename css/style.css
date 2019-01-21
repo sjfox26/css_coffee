@@ -66,16 +66,17 @@ body {
 .container {
   display: grid;
   grid-template-rows: 80vh min-content min-content 40vw min-content;
-  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  /*@media only screen and (max-width: 600px) {
+    grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }*/ }
   @media only screen and (max-width: 1100px) {
     .container {
       grid-template-rows: 80vh repeat(3, min-content) 40vw min-content; } }
   @media only screen and (max-width: 800px) {
     .container {
-      grid-template-rows: 80vh repeat(6, min-content); } }
-  @media only screen and (max-width: 600px) {
-    .container {
-      grid-template-columns: [sidebar-start] 6rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
+      grid-template-rows: 6rem 80vh min-content 40vw min-content repeat(3, min-content);
+      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
 
 .customer__picture {
   background-image: url(../img/jon-moore-399489-unsplash.jpg);
@@ -235,8 +236,16 @@ body {
   grid-column: sidebar-start / sidebar-end;
   grid-row: 1 / -1;
   display: flex;
-  justify-content: center;
-  position: relative; }
+  justify-content: center; }
+  @media only screen and (max-width: 800px) {
+    .sidebar {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 2;
+      position: sticky;
+      top: 0; } }
 
 .nav-btn {
   position: fixed;
@@ -246,6 +255,10 @@ body {
   height: 2px;
   width: 4.5rem;
   margin-top: 4rem; }
+  @media only screen and (max-width: 800px) {
+    .nav-btn {
+      margin-top: 0;
+      right: 1rem; } }
   .nav-btn::before, .nav-btn::after {
     background-color: #fff;
     height: 2px;
