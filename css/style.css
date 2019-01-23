@@ -210,7 +210,7 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  background-image: url(../img/mike-kenneally-46284-unsplash.jpg);
+  background-image: url(../img/mike-kenneally-hero.jpg);
   background-size: cover;
   background-position: center;
   color: white;
