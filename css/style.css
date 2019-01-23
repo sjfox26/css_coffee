@@ -13,11 +13,11 @@
   @media only screen and (max-width: 900px) {
     .about__text {
       width: 95%;
-      grid-column: center-start / center-end; } }
+      grid-column: full-start / full-end; } }
   @media only screen and (max-width: 700px) {
     .about__text {
       width: 100%;
-      grid-column: center-start / center-end;
+      grid-column: full-start / full-end;
       padding-bottom: 5rem; } }
 
 .about__composition {
