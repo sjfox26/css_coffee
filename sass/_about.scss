@@ -5,26 +5,23 @@
     //grid-row: 2 / span 1;
     background-color: #fff;
     width: 70%;
-    margin: 0 auto;
-    padding-top: 9rem;
-    padding-bottom: 12rem; //same with composition below
+    margin: 13vh auto;
+    //padding-top: 9rem;
+    //padding-bottom: 7rem;
 
     @media only screen and (max-width: 1100px) {
       grid-column: center-start / -1; //fills entire row
-      padding-bottom: 4rem;
       width: 88%;
     }
 
     @media only screen and (max-width: 900px) {
       width: 95%;
       grid-column: full-start / full-end;
-      padding: 2rem;
     }
 
     @media only screen and (max-width: 700px) {
       width: 100%;
       grid-column: full-start / full-end;
-      padding-bottom: 5rem;
     }
   }
 
@@ -33,18 +30,21 @@
     //grid-row: 2 / span 1;
     //background-color: #f195f3;
     width: 85%;
-    padding-top: 9rem;
-    padding-bottom: 12rem;
 
     display: grid;
     grid-template-rows: repeat(12, 1fr);
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
+    justify-content: center;
 
     @media only screen and (max-width: 1100px) {
       grid-column: center-start / -1; //fills entire row
-      padding-top: 2rem;
-      padding-bottom: 8rem;
+      margin-bottom: 15vh;
+    }
+
+    @media only screen and (max-width: 800px) {
+      //margin-bottom: 20vh;
+      display: none;
     }
 
 
